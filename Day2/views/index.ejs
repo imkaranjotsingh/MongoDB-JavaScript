@@ -1,0 +1,18 @@
+<form  action="/join" name="" method="POST" >
+    Book Name  <select name="book">
+        <% if(data.length){
+            for(var i=0;i<data.length;i++){ %>
+            <option value="<%=data[i].book_name%>"><%=data[i].book_name%></option>
+        <% }
+        }
+         %>
+        <option value="aa">Aaa</option>
+    
+    </select><br>
+                  
+            <button type="submit">Find </button>
+            
+                </form>
+            
+            
+    
